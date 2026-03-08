@@ -1,6 +1,5 @@
 {
-  "name": "navigator-v4-smarter-demo",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module"
+  "name": "navigator-v7b",
+  "version": "7.1.0",
+  "description": "NAVIGATOR V7B - FEST Academic Assistant handbook-grounded beta"
 }
