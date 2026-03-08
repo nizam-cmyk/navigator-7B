@@ -1,0 +1,141 @@
+{
+  "version": "v7B-BETA",
+  "source": "FEST Academic Handbook NOVEMBER 2025 KLUST 1.0",
+  "category": "academic_standing",
+  "grading_system": {
+    "grades": [
+      {
+        "marks_range": "95-100",
+        "grade": "A+",
+        "grade_point": 4.0,
+        "achievement": "Excellent"
+      },
+      {
+        "marks_range": "85-94",
+        "grade": "A",
+        "grade_point": 4.0,
+        "achievement": "High Distinction"
+      },
+      {
+        "marks_range": "75-84",
+        "grade": "A-",
+        "grade_point": 3.67,
+        "achievement": "Distinction"
+      },
+      {
+        "marks_range": "70-74",
+        "grade": "B+",
+        "grade_point": 3.33,
+        "achievement": "Very Good"
+      },
+      {
+        "marks_range": "65-69",
+        "grade": "B",
+        "grade_point": 3.0,
+        "achievement": "Good"
+      },
+      {
+        "marks_range": "60-64",
+        "grade": "B-",
+        "grade_point": 2.67,
+        "achievement": "Merit"
+      },
+      {
+        "marks_range": "55-59",
+        "grade": "C+",
+        "grade_point": 2.33,
+        "achievement": "Satisfactory"
+      },
+      {
+        "marks_range": "50-54",
+        "grade": "C",
+        "grade_point": 2.0,
+        "achievement": "Pass"
+      },
+      {
+        "marks_range": "47-49",
+        "grade": "C-",
+        "grade_point": 1.67,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "44-46",
+        "grade": "D+",
+        "grade_point": 1.33,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "40-43",
+        "grade": "D",
+        "grade_point": 1.0,
+        "achievement": "Low Pass"
+      },
+      {
+        "marks_range": "0-39",
+        "grade": "F",
+        "grade_point": 0.0,
+        "achievement": "Fail, No Credit"
+      }
+    ],
+    "non_gpa_grades": [
+      {
+        "grade": "I",
+        "meaning": "Incomplete"
+      },
+      {
+        "grade": "W",
+        "meaning": "Withdrawal"
+      },
+      {
+        "grade": "Au",
+        "meaning": "Audit"
+      },
+      {
+        "grade": "P",
+        "meaning": "Pass"
+      },
+      {
+        "grade": "F",
+        "meaning": "Fail for Pass-Fail status"
+      }
+    ]
+  },
+  "rules": {
+    "good_status": {
+      "label": "Good Status",
+      "cgpa_min": 2.0,
+      "condition": "CGPA 2.00 and above",
+      "meaning": "Student is in good academic standing."
+    },
+    "probation_1": {
+      "label": "Academic Probation 1",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 1,
+      "condition": "CGPA below 2.00 for any semester",
+      "meaning": "Student may be placed on Academic Probation 1."
+    },
+    "probation_2": {
+      "label": "Academic Probation 2",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 2,
+      "condition": "CGPA below 2.00 for two consecutive semesters",
+      "meaning": "Student may be placed on Academic Probation 2."
+    },
+    "dismissal": {
+      "label": "Academic Dismissal",
+      "cgpa_below": 2.0,
+      "consecutive_semesters": 3,
+      "condition": "CGPA below 2.00 for three consecutive semesters",
+      "meaning": "Student may be dismissed."
+    }
+  },
+  "calculation_notes": {
+    "gpa_formula": "GPA = total point average / total credit",
+    "cgpa_formula": "CGPA = sum of semester point averages / sum of semester total credits"
+  },
+  "safety_notes": [
+    "Do not declare dismissal from CGPA alone unless the consecutive semester pattern is known.",
+    "Final academic status must follow official University/Faculty records."
+  ],
+  "handbook_reference": "Grading Systems and Academic Standing"
+}

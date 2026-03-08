@@ -1,0 +1,202 @@
+{
+  "version": "v7B-BETA",
+  "source": "FEST Academic Handbook NOVEMBER 2025 KLUST 1.0",
+  "programmes": [
+    {
+      "code": "BCE",
+      "name": "Bachelor of Civil Engineering with Honours",
+      "aliases": [
+        "civil engineering",
+        "bce",
+        "bachelor of civil engineering"
+      ],
+      "faculty": "FEST",
+      "department": "Civil Engineering and Construction",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 140,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Credit transfer / exemption allows up to 30% for vertical transfer and up to 50% for lateral transfer."
+      ],
+      "handbook_reference": "Civil Engineering section / BCE programme summary"
+    },
+    {
+  "code": "AME303",
+  "name": "Bachelor of Mechanical Engineering with Honours",
+  "aliases": ["mechanical engineering", "ame303", "bachelor of mechanical engineering", "bme"],
+  "faculty": "FEST",
+  "department": "Mechanical and Automotive Engineering",
+  "award_level": "Bachelor",
+  "duration": null,
+  "mode_of_study": null,
+  "total_credit_hours": 135,
+  "entry_requirements": [],
+  "programme_notes": [
+    "Year 1 total credit hours = 33",
+    "Year 2 total credit hours = 35",
+    "Year 3 total credit hours = 38",
+    "Year 4 total credit hours = 29",
+    "Industrial training must be conducted before the final semester."
+  ],
+  "handbook_reference": "AME 303 academic landscape"
+}
+    },
+    {
+      "code": "AME304",
+      "name": "Bachelor of Technology (Honours) in Automotive",
+      "aliases": [
+        "automotive",
+        "automotive technology",
+        "ame304",
+        "bachelor of technology in automotive"
+      ],
+      "faculty": "FEST",
+      "department": "Mechanical and Automotive Engineering",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Academic landscape clearly indicates total programme credit hours of 120."
+      ],
+      "handbook_reference": "AME 304 academic landscape"
+    },
+    {
+      "code": "AME303",
+      "name": "Bachelor of Mechanical Engineering with Honours",
+      "aliases": [
+        "mechanical engineering",
+        "ame303",
+        "bachelor of mechanical engineering",
+        "bme"
+      ],
+      "faculty": "FEST",
+      "department": "Mechanical and Automotive Engineering",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Programme section is present in the handbook.",
+        "Elective list is available, but the total graduating credit value still needs a second extraction pass."
+      ],
+      "handbook_reference": "AME 303 programme section"
+    },
+    {
+      "code": "BSE",
+      "name": "Bachelor in Software Engineering (Honours)",
+      "aliases": [
+        "software engineering",
+        "bse",
+        "cit314",
+        "bachelor in software engineering"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Bachelor",
+      "duration": "3 years",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Industrial Training is 6 credits.",
+        "Industrial Training prerequisite requires completed 86 credit hours."
+      ],
+      "handbook_reference": "CIT 314 academic landscape"
+    },
+    {
+      "code": "BCS",
+      "name": "Bachelor in Computer Science (Honours)",
+      "aliases": [
+        "computer science",
+        "bcs",
+        "cit313",
+        "bachelor in computer science"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Bachelor",
+      "duration": "3 years",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 120,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Computing bachelor format mapped at 120 credits in V7A."
+      ],
+      "handbook_reference": "CIT 313 academic structure"
+    },
+    {
+      "code": "DIT",
+      "name": "Diploma in Information Technology",
+      "aliases": [
+        "dit",
+        "diploma in information technology",
+        "cit206"
+      ],
+      "faculty": "FEST",
+      "department": "Computing",
+      "award_level": "Diploma",
+      "duration": "2 years 6 months",
+      "mode_of_study": "Full Time",
+      "total_credit_hours": 92,
+      "entry_requirements": [],
+      "programme_notes": [
+        "Graduating credits stated as 92."
+      ],
+      "handbook_reference": "CIT 206 academic structure"
+    },
+    {
+      "code": "AES302",
+      "name": "Bachelor of Agricultural Science (Plantation Management) (Honours)",
+      "aliases": [
+        "agricultural science",
+        "plantation management",
+        "aes302",
+        "bachelor of agricultural science",
+        "bachelor of agricultural science plantation management"
+      ],
+      "faculty": "FEST",
+      "department": "Biotechnology and Agricultural Science",
+      "award_level": "Bachelor",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": null,
+      "entry_requirements": [
+        "Minimum STPM 2 Principles or any related diploma and foundation with minimum CGPA of 2.0, or other qualifications as accepted by the Senate."
+      ],
+      "programme_notes": [
+        "Minimum entry requirement is clearly stated in the handbook."
+      ],
+      "handbook_reference": "AES 302 programme section"
+    },
+    {
+      "code": "EAS201",
+      "name": "Diploma in Agricultural Science (Plantation Management)",
+      "aliases": [
+        "eas201",
+        "diploma in agricultural science",
+        "diploma plantation management",
+        "agricultural diploma"
+      ],
+      "faculty": "FEST",
+      "department": "Biotechnology and Agricultural Science",
+      "award_level": "Diploma",
+      "duration": null,
+      "mode_of_study": null,
+      "total_credit_hours": 84,
+      "entry_requirements": [
+        "Minimum SPM/UEC/O-Levels 3 credits including science and a pass in English, or any related certificates with minimum CGPA of 2.0, or other qualifications as accepted by the Senate."
+      ],
+      "programme_notes": [
+        "Year 1 total extracted: 43 credits.",
+        "Year 2 total extracted: 41 credits.",
+        "Approximate total programme credit hours based on extracted landscape = 84."
+      ],
+      "handbook_reference": "EAS 201 programme section and academic landscape"
+    }
+  ]
+}

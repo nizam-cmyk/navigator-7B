@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1024" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <title>NAVIGATOR V7B</title>
+  <style>
+    :root{--bg:#070b1f;--card:#121833;--card2:#1a2144;--line:#2f376d;--text:#f8f9ff;--muted:#b9c0ef;--accent:#9b7bff;--accent2:#7ee0ff}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at top,#18204b 0,#0b1026 45%,#060914 100%);color:var(--text)}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 40px}
+    .grid{display:grid;grid-template-columns:1.1fr 1fr;gap:22px}.full{grid-column:1/-1}
+    .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+    .eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:#2a2f5d;color:#d7dbff;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    h1{font-size:54px;line-height:.98;margin:18px 0 12px;max-width:600px}.sub{color:var(--muted);font-size:19px;line-height:1.55;max-width:670px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.badge{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid #404776;color:#dce0ff;font-weight:600;font-size:14px}
+    .orb{display:grid;place-items:center;height:100%;min-height:300px;border-radius:24px;background:radial-gradient(circle,#b798ff 0,#8f61ff 26%,#302b67 55%,#171c3c 72%,transparent 73%)}
+    .smile{width:172px;height:172px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#debfff,#9f72ff 55%,#7448f1 100%);position:relative;box-shadow:0 0 60px rgba(155,123,255,.55)}
+    .smile:before,.smile:after{content:"";position:absolute;top:58px;width:13px;height:13px;background:#121212;border-radius:50%}.smile:before{left:46px}.smile:after{right:46px}.mouth{position:absolute;left:50%;transform:translateX(-50%);top:96px;width:54px;height:28px;border:4px solid #2e1550;border-top:none;border-left-color:transparent;border-right-color:transparent;border-bottom-left-radius:50px;border-bottom-right-radius:50px}
+    h2{margin:0 0 8px;font-size:24px}.muted{color:var(--muted)}
+    .actions{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.chipbtn{padding:16px 18px;border-radius:18px;border:1px solid #3e477f;background:#232a55;color:#fff;text-align:left;font-size:15px;font-weight:700;cursor:pointer}
+    .messages{background:#0f1430;border:1px solid #36408a;border-radius:24px;padding:16px;min-height:360px;max-height:420px;overflow:auto;margin:16px 0}
+    .msg{padding:14px 16px;border-radius:18px;margin:10px 0;white-space:pre-wrap;line-height:1.48}.msg.you{background:#1d2550;border:1px solid #3d488e}.msg.bot{background:#322b68;border:1px solid #5a53a9}.label{font-weight:800;color:#fff;margin-bottom:6px;display:block}
+    textarea,input[type=file]{width:100%;margin-top:10px;border-radius:16px;border:1px solid #40497d;background:#121935;color:#fff;padding:14px}.row{display:grid;grid-template-columns:1fr 180px;gap:12px}.send{margin-top:12px;width:100%;padding:16px;border:0;border-radius:16px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#08101d;font-weight:900;cursor:pointer}
+    .small{font-size:13px;color:#c8cdfa}
+    @media(max-width:860px){.grid{grid-template-columns:1fr}h1{font-size:42px}.row{grid-template-columns:1fr}.orb{min-height:220px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="grid">
+      <section class="card">
+        <span class="eyebrow">NAVIGATOR V7B • HANDBOOK-GROUNDED BETA</span>
+        <h1>Your FEST academic assistant, now grounded in the handbook.</h1>
+        <div class="sub">NAVIGATOR V7B provides programme guidance, academic standing interpretation, graduation checks, and academic form support using structured FEST handbook data.</div>
+        <div class="badges">
+          <span class="badge">Programme Guidance</span>
+          <span class="badge">Transcript Mode</span>
+          <span class="badge">Form Detection</span>
+          <span class="badge">Standing Mode</span>
+          <span class="badge">PWA Ready</span>
+        </div>
+      </section>
+      <section class="card orb"><div class="smile"><div class="mouth"></div></div></section>
+      <section class="card">
+        <h2>Quick actions</h2>
+        <div class="muted">Tap one of these to test handbook-grounded routing and responses.</div>
+        <div class="actions">
+          <button class="chipbtn" data-prompt="What programmes are offered under FEST and what are the entry requirements?">Programme info</button>
+          <button class="chipbtn" data-prompt="My CGPA is 1.95. Am I on probation?">Probation rules</button>
+          <button class="chipbtn" data-prompt="I am in Software Engineering and I have 109 credits. Can I graduate?">Graduation check</button>
+          <button class="chipbtn" data-prompt="I uploaded a dismissal appeal form. Tell me what I need to fill in and submit.">Form mode</button>
+        </div>
+      </section>
+      <section class="card">
+        <h2>Chat</h2>
+        <div class="muted">NAVIGATOR V7B is a handbook-grounded beta. Some programmes are fully mapped, while others are still being expanded.</div>
+        <div id="messages" class="messages">
+          <div class="msg bot"><span class="label">NAVIGATOR</span>Hello. I am ready. Ask about programme information, probation, dismissal, graduation eligibility, transcript checks, or upload a form-related question.</div>
+        </div>
+        <textarea id="message" placeholder="Try: My CGPA is 1.95. Am I on probation? Or: I am in Software Engineering and I have 109 credits. Can I graduate?"></textarea>
+        <div class="row">
+          <input id="file" type="file" accept=".pdf,.png,.jpg,.jpeg" />
+          <button id="send" class="send">Send</button>
+        </div>
+        <div class="small">Current file support is still preliminary. NAVIGATOR can classify forms and transcript-related prompts, while full file parsing will be expanded in future versions.</div>
+      </section>
+    </div>
+  </div>
+  <script>
+    const messages = document.getElementById('messages');
+    const message = document.getElementById('message');
+    const file = document.getElementById('file');
+    const send = document.getElementById('send');
+    document.querySelectorAll('[data-prompt]').forEach(btn => btn.onclick = () => {message.value = btn.dataset.prompt; message.focus();});
+    function add(cls, who, text){const div=document.createElement('div');div.className='msg '+cls;div.innerHTML=`<span class="label">${who}</span>${String(text).replace(/</g,'&lt;')}`;messages.appendChild(div);messages.scrollTop=messages.scrollHeight;}
+    send.onclick = async () => {
+      const text = message.value.trim();
+      const f = file.files[0];
+      if(!text && !f) return;
+      add('you','You', text || `(uploaded ${f.name})`);
+      const payload = { message: text, fileName: f ? f.name : '' };
+      message.value=''; file.value='';
+      add('bot','NAVIGATOR','Thinking...');
+      try {
+        const res = await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+        const data = await res.json();
+        messages.lastChild.innerHTML = `<span class="label">NAVIGATOR</span>${String(data.reply || 'No response received.').replace(/</g,'&lt;')}`;
+      } catch (err) {
+        messages.lastChild.innerHTML = `<span class="label">NAVIGATOR</span>NAVIGATOR could not reach the server. Please try again.`;
+      }
+    };
+    if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js'));}
+  </script>
+</body>
+</html>
